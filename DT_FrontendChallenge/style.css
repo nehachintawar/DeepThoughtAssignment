@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 80px;
+  background-color: lightgray;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 4rem;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+
+h1 strong {
+  color: rgb(0, 0, 153);
+  font-weight: bolder;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+ul li{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  background-color: #007bff;
+  padding: 0.7rem;
+  color: aliceblue;
+}
+
+ul li:last-child{
+  padding: 0.3rem;
+  background: none;
+  font-size: 1.7rem;
+}
+
+ul li a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+ul li:last-child a{
+  color: blue;
+}
+
+ul img{
+  width: 2.5rem;
+  border-radius: 100%;
+  border: 1px dotted black;
+}
+
+.page{
+  width: 100%;
+  margin-top: 90px;
+  position: relative;
+}
+
+.container{
+  margin: auto;
+  width: 80%;
+  height: 10rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.container .heading{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .heading h1{
+  color:  #0029FF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.7rem;
+}
+
+.container .heading button{
+  background-color: #0029FF;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.task-container{
+  width: 100%;
+  background-color: #d2d3d4;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.task-container h2{
+  font-weight: 600;
+}
+
+.task-container p{
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+.asset{
+  width: 45%;
+  height: 80vh;
+  box-shadow: 1px 1px 10px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.asset .asset-heading{
+  width: 100%;
+  height: 2.5rem;
+  background-color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.asset .asset-heading h2{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.asset .asset-heading .i-button{
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 600;
+  right: 10%;
+  background-color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-left: 10px;
+  padding-top: 4px;
+  border-radius: 100%;
+}
+
+.asset-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.asset-desc-container{
+  width: 100%;
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  background-color: rgb(241, 237, 237);
+}
+
+.asset-desc-container p{
+  width: 100%;
+  text-align: justify;
+}
+
+.asset-desc-container strong{
+  font-size: 1rem;
+}
+
+.asset-desc-container div{
+  font-size: 1.3rem;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.thread-headings{
+  display: flex;
+  width: 90%;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.thread-headings div{
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.thread-headings h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.threads-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+
+
+.threads-container>div{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.threads-container>div .sub-thread-container, .sub-interpretation-container{
+  width: 50%;
+  height: 8rem;
+  box-shadow: 1px 1px 10px rgb(236, 236, 236);
+  border-radius: 6px;
+}
+
+.sub-thread-container h1, .sub-interpretation-container h1, .summary-container h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  background-color: rgb(236, 236, 236);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.sub-thread-container textarea, .sub-interpretation-container textarea, .summary-container textarea{
+  width: 100%;
+  height: 6rem;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 10px gray;
+}
+
+
+.threads-container button{
+  background-color: blue;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.summary-container{
+  width: 100%;
+}
+
+.card{
+  width: 100%;
+  padding: 1rem;
+
+}
+
+.input-field {
+  margin-top: 10px;
+}
+.input-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.input-field input,
+.input-field .editor {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 1px 1px 10px rgb(212, 212, 212);
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  outline: none;
+}
+.input-field .editor {
+  height: 150px;
+  resize: none;
+}
+.toolbar {
+  background: #f9f9f9;
+  padding: 8px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+.fourSACard {
+  width: 100%;  
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.fourSACard-section {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.fourSACard-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+}
+.fourSACard-section-content {
+  margin-top: 8px;
+  color: #666;
+  display: none; /* Hidden by default */
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+}
+.fourSACard-see-more {
+  margin-top: 8px;
+  text-align: right;
+  color: #070707;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+}
+
+/* journey board */
+
+.journey-board{
+  position: absolute;
+  top: 13%;
+  height: 70vh;
+  box-shadow: 1px 1px 10px gray;
+  border-radius: 5px;
+}
+
+.journey-board-collapsed{
+  width: 7%;
+}
+
+.journey-board .board-heading{
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: black;
+}
+
+.board-heading h2{
+  display: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.board-heading button{
+  width: 1.5rem;
+  height: 1.5rem;
+  /* padding: 0.3rem; */
+  border-radius: 100%;
+}
+
+.journey-board-container{
+  /* padding: 1.3rem; */
+  display: flex;
+  justify-content: center;
+}
+.journey-board-container .project-number{
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #0029FF;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.footer{
+  width: 100%;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #007bff;
+  padding: 10px;
+}
